@@ -1,5 +1,5 @@
 :root{
-    --primary-color: rgb(147, 201, 248);
+    --primary-color: rgb(62, 10, 10);
     --primary-color-darker: darkgreen;
 }
 
@@ -18,10 +18,10 @@ body{
 }
 
 .container{
-    max-width: 640px;
-    margin: 60px auto;
+    max-width: 300px;
+    margin: 70px auto;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -35,4 +35,30 @@ form input{
     font-size: 24px;
     height: 24px;
     padding: 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button{
+    background: var(--primary-color);
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin: top 30px;
+}
+
+form button:hover{
+    background: var(--primary-color-darker);
+}
+
+.relogio{
+    font-size: 3em;
+}
+
+.pausado{
+    color: red
 }
